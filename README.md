@@ -4,6 +4,22 @@
 - Laravel Sail（ララベル セイル）  
 
 
+その他必要なパッケージをインストールしてビルド
+```
+./vendor/bin/sail npm install
+./vendor/bin/sail npm run build
+```
+
+マイグレート
+```
+./vendor/bin/sail php artisan migrate
+```
+
+テストユーザを作成
+```
+./vendor/bin/sail php artisan db:seed
+```
+
 ## 使い方
 コンテナ起動 laravel([localhost](http://localhost/)) phpmyadmin([localhost:8080](http://localhost:8080))
 ```
