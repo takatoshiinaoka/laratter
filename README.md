@@ -1,5 +1,6 @@
 # laratter
-## 開発環境
+
+## 環境
 - Laravel Sail（ララベル セイル）  
 
 
@@ -19,6 +20,7 @@ Laravel Breezeのインストール
 ./vendor/bin/sail composer require laravel/breeze --dev
 ./vendor/bin/sail php artisan breeze:install
 ```
+
 
 その他必要なパッケージをインストールしてビルド
 ```
@@ -42,7 +44,7 @@ Model ```Tweet```を作成。```-m``` をつけることでマイグレーショ
 ./vendor/bin/sail php artisan make:model Tweet -m
 ```
 database/migrations/ の下にあるマイグレーションファイルを編集。  
-  
+
 マイグレーション実行。  
 ```
 ./vendor/bin/sail php artisan migrate
@@ -107,3 +109,4 @@ CSS が効いていない気がする．．という場合は下記コマンド�
 - [phpmyadminとは](https://ja.wikipedia.org/wiki/PhpMyAdmin)  
 - [laravel Validatorによるバリデーション](https://qiita.com/gone0021/items/c613ef7e006b6f5d47ce)  
 - [PHP Laravelのbladeテンプレートを理解する。](https://qiita.com/shizen-shin/items/24d22265db47d7fb3c3d)  
+
