@@ -1,5 +1,6 @@
-cp /home/site/default /etc/nginx/sites-available/default
+rm -rf /usr/local/etc/php/conf.d/opcache-recommended.ini
+rm -rf /usr/local/etc/php/conf.d/docker-php-ext-opcache.ini
 service nginx reload
 
-cd /home/site && cp .env wwwroot/.env
 php artisan key:generate
+php artisan optimize
